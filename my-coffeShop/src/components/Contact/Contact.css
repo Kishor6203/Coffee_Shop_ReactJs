@@ -1,0 +1,210 @@
+/* =========================
+   CONTACT SECTION (PREMIUM)
+========================= */
+.contact {
+  padding: 10px 2px;
+  background: linear-gradient(180deg, #ffffff, #f7f3ee);
+}
+
+/* HEADER */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header .tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a47148;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.contact-header p {
+  color: #666;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding: 30px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* inputs */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  outline: none;
+
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a47148;
+  box-shadow: 0 0 0 3px rgba(164, 113, 72, 0.15);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* submit button */
+.submit-btn {
+  background: linear-gradient(135deg, #a47148, #8c5a3c);
+  color: white;
+
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(164, 113, 72, 0.25);
+}
+
+/* form note */
+.form-note {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+
+/* =========================
+   INFO CARD
+========================= */
+.contact-info {
+  flex: 1;
+
+  padding: 30px;
+  border-radius: 16px;
+
+  background: #1a1a1a;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3 {
+  font-size: 20px;
+}
+
+.address,
+.phone {
+  color: #ddd;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* whatsapp */
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* quick book */
+.quick-book {
+  background: #ffb703;
+  border: none;
+  padding: 12px;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.quick-book:hover {
+  transform: translateY(-2px);
+}
+
+/* badge */
+.badge {
+  margin-top: auto;
+  padding: 10px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.08);
+  text-align: center;
+
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-header h2 {
+    font-size: 30px;
+  }
+}

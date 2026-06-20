@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+
+  background-image: url("https://img.magnific.com/free-photo/brown-coffee-droplets-fly-around-cup-chaotic-artistic-splash_91128-4339.jpg");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+/* ❌ REMOVED OVERLAY COMPLETELY */
+
+/* =========================
+   CONTENT
+========================= */
+.hero-content {
+  will-change: transform;
+  transform: translateZ(0);
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  padding: 20px;
+}
+
+/* tagline */
+.tagline {
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ffb703;
+  margin-bottom: 15px;
+}
+
+/* H1 — PURE WHITE + SHADOW FOR READABILITY */
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+
+  color: #ffffff;
+
+  /* important for readability without overlay */
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* paragraph */
+.hero-content p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 30px;
+
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* primary */
+.primary-btn {
+  background: linear-gradient(135deg, #ffb703, #ff7b00);
+  border: none;
+  color: #111;
+  box-shadow: 0 10px 25px rgba(255, 183, 3, 0.25);
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* secondary */
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 183, 3, 0.7);
+  color: #ffb703;
+  backdrop-filter: blur(10px);
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 183, 3, 0.15);
+  transform: translateY(-3px);
+}
+
+/* =========================
+   STATS
+========================= */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stats h3 {
+  font-size: 25px;
+  color: #f8f7f7;
+}
+
+.stats p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

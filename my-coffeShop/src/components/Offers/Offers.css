@@ -1,0 +1,146 @@
+/* =========================
+   OFFERS (PREMIUM STYLE)
+========================= */
+.offers {
+  padding: 10px 2px;
+  background: linear-gradient(180deg, #ffffff, #f7f3ee);
+  text-align: center;
+}
+
+/* header */
+.offers-header h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.offers-header p {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* =========================
+   GRID
+========================= */
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+/* =========================
+   CARD (PREMIUM FLOAT EFFECT)
+========================= */
+.offer-card {
+  position: relative;
+  text-align: left;
+
+  padding: 28px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* hover lift + glow */
+.offer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(164, 113, 72, 0.25);
+}
+
+/* subtle golden glow overlay */
+.offer-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    rgba(255, 183, 3, 0.12),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.offer-card:hover::before {
+  opacity: 1;
+}
+
+/* =========================
+   BADGE (GRADIENT PREMIUM)
+========================= */
+.offer-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #111;
+  background: linear-gradient(135deg, #ffb703, #ff7b00);
+
+  box-shadow: 0 10px 20px rgba(255, 183, 3, 0.25);
+}
+
+/* =========================
+   TEXT
+========================= */
+.offer-card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.offer-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.offer-btn {
+  margin-top: 18px;
+
+  padding: 10px 16px;
+  border-radius: 12px;
+
+  border: none;
+  cursor: pointer;
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #a47148, #8c5a3c);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.offer-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(164, 113, 72, 0.25);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-header h2 {
+    font-size: 32px;
+  }
+}

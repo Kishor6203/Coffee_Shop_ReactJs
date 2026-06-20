@@ -1,0 +1,144 @@
+/* =========================
+   TESTIMONIALS (PREMIUM)
+========================= */
+.testimonials {
+  padding: 10px 2px;
+  background: linear-gradient(180deg, #f9f6f2, #ffffff);
+  text-align: center;
+}
+
+/* header */
+.testimonials-header h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.testimonials-header p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   RATING SUMMARY (HERO TRUST BLOCK)
+========================= */
+.rating-summary {
+  display: inline-block;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.rating-summary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 55px rgba(164, 113, 72, 0.2);
+}
+
+.rating-summary h3 {
+  font-size: 28px;
+  color: #2b2b2b;
+}
+
+.rating-summary p {
+  color: #777;
+}
+
+/* =========================
+   GRID
+========================= */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+/* =========================
+   REVIEW CARD (PREMIUM FLOAT)
+========================= */
+.review-card {
+  text-align: left;
+
+  padding: 25px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover lift + glow */
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(164, 113, 72, 0.25);
+}
+
+/* subtle glow overlay */
+.review-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at top right,
+    rgba(255, 183, 3, 0.12),
+    transparent 60%
+  );
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.review-card:hover::before {
+  opacity: 1;
+}
+
+/* =========================
+   STARS
+========================= */
+.stars {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   TEXT
+========================= */
+.review-text {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* NAME */
+.review-card h4 {
+  color: #2b2b2b;
+  font-size: 15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-header h2 {
+    font-size: 32px;
+  }
+}

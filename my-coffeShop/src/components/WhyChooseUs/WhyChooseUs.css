@@ -1,0 +1,215 @@
+/* =========================
+   WHY CHOOSE US - PREMIUM
+========================= */
+
+.why {
+  padding: 10px 2px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(192, 139, 92, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(139, 94, 52, 0.08),
+      transparent 40%
+    ),
+    #faf7f3;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.why-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.why-subtitle {
+  display: inline-block;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a47148;
+  margin-bottom: 10px;
+}
+
+.why-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c1810;
+  margin-bottom: 10px;
+}
+
+.why-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #6d625b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.why-card {
+  position: relative;
+
+  padding: 30px 30px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(164, 113, 72, 0.12);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+  transition: all 0.45s ease;
+
+  overflow: hidden;
+}
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at top right,
+    rgba(255, 183, 3, 0.15),
+    transparent 60%
+  );
+
+  opacity: 0;
+
+  transition: 0.4s ease;
+}
+
+.why-card:hover::before {
+  opacity: 1;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 25px 60px rgba(164, 113, 72, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #c08b5c,
+    #8b5e34
+  );
+
+  box-shadow: 0 15px 35px rgba(139, 94, 52, 0.25);
+}
+
+.icon {
+  font-size: 30px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.why-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c1810;
+  margin-bottom: 14px;
+}
+
+.why-card p {
+  color: #6d625b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-header h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    padding: 80px 18px;
+  }
+
+  .why-header h2 {
+    font-size: 34px;
+  }
+
+  .why-header p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-header h2 {
+    font-size: 30px;
+  }
+
+  .why-card {
+    padding: 28px 24px;
+  }
+
+  .why-card h3 {
+    font-size: 20px;
+  }
+}
